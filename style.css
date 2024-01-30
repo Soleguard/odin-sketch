@@ -1,5 +1,5 @@
 /* Square Info */
-.square {
+.row-square, .row-column {
     height: 25px;
     width: 25px;
     border-style: solid;
