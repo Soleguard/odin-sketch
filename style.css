@@ -1,1 +1,9 @@
-
+/* Square Info */
+.square {
+    height: 25px;
+    width: 25px;
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    background-color: indigo;
+}
