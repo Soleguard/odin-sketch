@@ -26,3 +26,20 @@ for (let iteration = 0; iteration < 16; iteration++)
         column_Container.appendChild(list_Item);
     }
 }
+
+// Add event listener for mouseover for any square
+CONTAINER.addEventListener('mouseover', function(e)
+{
+    // Reference former background color
+    old_Background_Color = e.target.style.backgroundColor;
+
+    // Set background color to gray
+    e.target.style.backgroundColor = 'gray';
+
+    // Add event listener for mouseleave in this square
+    e.target.addEventListener('mouseleave', function(e)
+    {
+        // Restore former background color
+        e.target.style.backgroundColor = old_Background_Color;
+    });
+});
