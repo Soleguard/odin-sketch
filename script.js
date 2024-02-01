@@ -1,28 +1,28 @@
 // Reference container
 const CONTAINER = document.getElementById("container");
 
-// Iterate through rows
-for (let row = 0; row < 16; row++)
+// Loop 16 times
+for (let iteration = 0; iteration < 16; iteration++)
 {
-    // Create row square
-    let row_Square = document.createElement("div");
+    // Create column to occupy squares
+    let column_Container = document.createElement("ul");
+    // Add to main container
+    CONTAINER.appendChild(column_Container);
 
-    // Set class
-    row_Square.classList.add("row-square");
-
-    // Add to container
-    CONTAINER.appendChild(row_Square);
-
-    // Iterate through columns per row
-   for (let col = 0; col < 16; col++)
+    // Create 16 vertical squares per iteration
+    for (let col = 0; col < 16; col++)
     {
-        // Create column square
-        let row_Column = document.createElement("div");
+        // Create list item for each square
+        let list_Item = document.createElement("li");
 
+        // Create square
+        let square = document.createElement("div");
         // Set class
-        row_Column.classList.add("row-column");
+        square.classList.add("square");
+        // Add square to list item
+        list_Item.appendChild(square);
 
-        // Add to container
-        CONTAINER.appendChild(row_Column);
+        // Add list item to column container
+        column_Container.appendChild(list_Item);
     }
 }
