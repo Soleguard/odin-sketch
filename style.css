@@ -1,3 +1,10 @@
+/* Container info */
+#container {
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Square Info */
 .square {
     height: 25px;
@@ -5,17 +12,11 @@
     border-style: solid;
     border-width: thick;
     border-color: black;
-    background-color: indigo;
+    background-color: green;
+    flex-grow: 1;
 }
 
-/* List info */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0px;
-    display: flex;
-}
-
+/* Body info */
 body {
     margin: 0px;
 }
